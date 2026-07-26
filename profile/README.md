@@ -147,7 +147,7 @@ A company can pin it to their risk classes and enforce it in CI with no need for
 **_So, why so simple?_**
 Because is nothing to store, the proof is in the nullifier and the hash.
 
-That budget line is the piece we care most about. A human presence check that can be spammed is theatre. Because AgentKit counts usage per human rather than per key, the limit follows the person across every agent and machine they run, so rubber-stamping becomes a thing you spend rather than a thing you shrug at.
+That budget line is the piece we care most about. A human presence check that can be spammed is theatre. Because AgentKit counts usage per human rather than per key, the limit follows the person across every agent and machine they run, so rubber-stamping becomes a thing you spend.
 
 <br/>
 
