@@ -146,17 +146,11 @@ That budget line is the piece we care most about. A human presence check that ca
 
 <br/>
 
-## The regulation angle, stated accurately
+## The regulation part
 
-**Article 50 of the EU AI Act applies from 2 August 2026.** Plenty of projects are about to describe this wrongly, so here is what it actually says.
+Article 50 of the EU AI Act lands on 2 August 2026, a week from now. Ship AI-generated work to the public without a human genuinely reviewing it and you owe a label on it, or a fine of €15,000,000 or 3% of worldwide turnover. Machine output needs a named human behind it, and the human has to be the last one in. Proving that for a commit is what this does.
 
-It does not require you to prove which lines of your codebase were written by AI. It is a content transparency rule. What is genuinely interesting for us is the shape of the exemption in Article 50(4), where the disclosure duty falls away:
-
-> where the AI-generated content has undergone a process of **human review or editorial control** and where a natural or legal person **holds editorial responsibility** for the publication of the content
-
-So European law now names "a human reviewed this and somebody is responsible for it" as the thing that buys you an exemption, and provides no mechanism at all to prove it. That is the gap. Not a compliance product, just a primitive that fits a hole the law left open.
-
-Sources: [Article 50 text](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50) · [Commission FAQ](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act) · [Transparency guidelines](https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content)
+[Article 50](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50) · [Guidelines, 20 Jul 2026](https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content) · [Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content)
 
 <br/>
 
