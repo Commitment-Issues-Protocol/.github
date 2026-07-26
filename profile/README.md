@@ -43,7 +43,9 @@ It's a term that has taken the developer community by storm, AI slop is a 'slur'
 - **Codeberg** members had an astounding majority vote (358 to 144) banning heavily AI-generated projects.
 - **Log4j** received 50 bounty reports for 20 bugs and added a 'AGENTS.md' requesting AI agents stop submitting ridiculous, hallucinated and embarassing bug bounties.
 - A **matplotlib** maintainer has closed an AI agent's PR and as a result, the agent published a "post" accusing this guy of "discrimination against AI".
-All the above raises the question, does Github's own "Verified" badge prove anything? Is this key-signed commit attesting to anything meaningful if it fails to prove a person wrote or checked this code?
+<br/>
+
+All of the above raises the question: does Github's own "Verified" badge prove anything? Is this key-signed commit attesting to anything meaningful if it fails to prove a person wrote or even checked this code?
 Github's verification failed to do this even prior to the rise of AI agents and now, with their codebases spreading like wildfire, it proves even less given the fact that it's perfectly possible that anyone who ahs a leaked token and an agent can produce the same green checkmark attesting to their commits like any real human ca.
 
 ### A note on AI agent preservation
