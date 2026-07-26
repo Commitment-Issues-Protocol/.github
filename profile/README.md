@@ -32,7 +32,7 @@
 
 ## The problem at hand
 
-Nobody knows who is writing the code anymore, and the tools used to foster trust broke broke as a result.
+Nobody knows who is writing the code anymore, and the tools used to foster trust haven been broken as a result.
 
 Your git graph used to be meaningful, attestable to an individual in all their creativity, knowledge & technological wisdom. Though with the rise of AI agents committing & creating code, it seems now all this contribution graph attests to is how much compute power your agent used. Unfortunately, despite its shallow proof-of-work, there are still fail to recognise it for what most of it is... AI slop.
 
@@ -142,7 +142,8 @@ agents:
   block_unattended: ["src/auth/**", "**/*.sol"]
 ```
 
-A solo dev can set this to two paths and forget about it. A company can pin it to their risk classes and enforce it in CI with no new vendor, no seats, and no identity database, because there is nothing to store. The proof is a nullifier and a hash.
+A solo dev can set this to two paths and forget about it. 
+A company can pin it to their risk classes and enforce it in CI with no need for a new vendor, seats, or an identity database, because there is nothing to store. The proof is the nullifier and the hash.
 
 That budget line is the piece we care most about. A human presence check that can be spammed is theatre. Because AgentKit counts usage per human rather than per key, the limit follows the person across every agent and machine they run, so rubber-stamping becomes a thing you spend rather than a thing you shrug at.
 
