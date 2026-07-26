@@ -268,7 +268,7 @@ Built at ETHGlobal Lisbon, 24 to 26 July 2026. Helping developers develop for th
 
 <br/>
 
-!(../images/Commitment Issues.png)
+![Commitment Issues banner](../images/Commitment%20Issues.png)
 
 Built by humans. Provably, which is sort of the point.
 
