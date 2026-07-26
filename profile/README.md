@@ -34,7 +34,7 @@
 
 Nobody knows who is writing the code anymore, and the tools used to foster trust haven been broken as a result.
 
-Your git graph used to be meaningful, attestable to an individual in all their creativity, knowledge & technological wisdom. Though with the rise of AI agents committing & creating code, it seems now all this contribution graph attests to is how much compute power your agent used. Unfortunately, despite its shallow proof-of-work, there are still fail to recognise it for what most of it is... AI slop.
+Your git graph used to be meaningful, attestable to an individual in all their creativity, knowledge & technological wisdom. Though with the rise of AI agents committing & creating code, it seems now all this contribution graph attests to is how much compute power your agent used.
 
 ### AI slop, freshly served cold
 It's a term that has taken the developer community by storm. AI slop is on the tip of everyone's tongue when the time for code review is nigh. Let's explore some problematic metrics:
