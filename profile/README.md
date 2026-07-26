@@ -117,7 +117,7 @@ Three things are bound together in one attestation: **who** (an anonymous World 
 
 ## You decide how much proof
 
-This is what matters in the long-term, outside of a weekend-long development project. If a selfie is required for every commit, it would be insanely obnoxious, annoying and nobody would ship it. So the default is zero, instead, you opt in to the paths where being wrong is expensive.
+This is what matters in the long-term, outside of a weekend-long development project. If a selfie is required for every commit, it would be insanely obnoxious, annoying and nobody would ship it. So the default is zero. Instead, you opt in to the paths where being wrong is expensive.
 
 ```yaml
 # .commitment.yml
@@ -142,8 +142,10 @@ agents:
   block_unattended: ["src/auth/**", "**/*.sol"]
 ```
 
-A solo dev can set this to two paths and forget about it. 
-A company can pin it to their risk classes and enforce it in CI with no need for a new vendor, seats, or an identity database, because there is nothing to store. The proof is the nullifier and the hash.
+A solo dev can set it and forget it.
+A company can pin it to their risk classes and enforce it in CI with no need for a new vendor, seats, or an identity database. 
+**_So, why so simple?_**
+There is nothing to store, because the proof is in the nullifier and the hash.
 
 That budget line is the piece we care most about. A human presence check that can be spammed is theatre. Because AgentKit counts usage per human rather than per key, the limit follows the person across every agent and machine they run, so rubber-stamping becomes a thing you spend rather than a thing you shrug at.
 
