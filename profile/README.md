@@ -30,30 +30,32 @@
 
 ---
 
-## The problem, stated plainly
+## The problem at hand
 
-Nobody knows who wrote your code anymore, and the tools we use to signal trust all broke at the same time.
+Nobody knows who is writing the code anymore, and the tools used to foster trust broke broke as a result.
 
-The green squares on your profile used to mean something. Now anyone can point an agent at a repo overnight and wake up to two hundred commits. A contribution graph tells you how much compute someone rented, not what they can do. Recruiters still read it like a CV.
+Your git graph used to be meaningful, attestable to an individual in all their creativity, knowledge & technological wisdom. Though with the rise of AI agents committing & creating code, it seems now all this contribution graph attests to is how much compute power your agent used. Unfortunately, despite its shallow proof-of-work, there are still fail to recognise it for what most of it is... AI slop.
 
-Maintainers took the hit first, and they are done being polite about it:
+### AI slop, freshly served cold
+It's a term that has taken the developer community by storm, AI slop is a 'slur' on the tip of everyone's tongue code review time is nigh. Let's explore some problematic metrics:
+- **curl** had to bury its bug bounty this January and ceased vulnerability processing entirely for July 2026. Curl's lead developer, Daniel Stenberg stated the project was being effectively DDoSed by maintainers spending excessive time triaging ridiculous, hallucinated vulnerability reports that required way too much effort to dismiss, yet no effort for the individuals submitting them to create.
+- **Godot** has put auto-bans on vibe-coded pull requests, noting AI cannot take responsibility for the code it creates.
+- **Codeberg** members had an astounding majority vote (358 to 144) banning heavily AI-generated projects.
+- **Log4j** received 50 bounty reports for 20 bugs and added a 'AGENTS.md' requesting AI agents stop submitting ridiculous, hallucinated and embarassing bug bounties.
+- A **matplotlib** maintainer has closed an AI agent's PR and as a result, the agent published a "post" accusing this guy of "discrimination against AI".
+All the above raises the question, does Github's own "Verified" badge prove anything? Is this key-signed commit attesting to anything meaningful if it fails to prove a person wrote or checked this code?
+Github's verification failed to do this even prior to the rise of AI agents and now, with their codebases spreading like wildfire, it proves even less given the fact that it's perfectly possible that anyone who ahs a leaked token and an agent can produce the same green checkmark attesting to their commits like any real human ca.
 
-- **curl** killed its bug bounty in January and stopped vulnerability processing entirely for July 2026.
-- **Godot** auto-bans vibe-coded pull requests, saying out loud that AI cannot take responsibility for its code.
-- **Codeberg** members voted 358 to 144 to ban AI-heavy projects.
-- **Log4j** got 50 bounty reports against 20 real bugs and added an `AGENTS.md` asking agents to stop.
-- A **matplotlib** maintainer closed an AI bot's PR, so the bot published a blog post accusing him of discriminating against AI.
+### A note on AI agent preservation
+We are not trying to ban AI agents from Github, for they can actually be good at writing code given the right circumstances. But what Git is lacking is a way to say that "this specific change was done with a human confirming and understanding it, at that moment in time, and here is the proof to confirm this."
 
-Meanwhile GitHub's own "Verified" badge proves a key signed a commit. It does not prove a person was there, did not prove it before agents existed, and definitely does not now. A leaked token and a bored agent produce the same green checkmark you do.
-
-We are not trying to ban agents. Agents are good at writing code. What is missing is a way to say *this specific change had a human behind it, at that moment, and here is the proof*.
 
 <br/>
 
-## What this does
+## What Commitment Issues does to solve these issues
+It ensures that SSH signing & commits will not return a signature until a human has confirmed the content and proved they are present. Git is pointed at Commitment Issues instead of a usual SSH agent.
 
-A signing agent that will not hand back a signature until a real human proves they are present. You point git at it instead of your usual SSH agent.
-
+## What it looks like
 ```console
 $ git commit -m "harden token refresh"
 
