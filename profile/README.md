@@ -268,7 +268,7 @@ Built at ETHGlobal Lisbon, 24 to 26 July 2026. Helping developers develop for th
 
 <br/>
 
-<img src="**images/Commitment Issues.png**" alt="Banner displaying a vintage computer GUI and text: 'Do you want to commit?'">
+!(../images/Commitment Issues.png)
 
 Built by humans. Provably, which is sort of the point.
 
