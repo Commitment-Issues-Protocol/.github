@@ -241,17 +241,17 @@ Everything below is from building this over one weekend against the beta SDKs. I
 </details>
 
 <details>
-<summary><b>Threat model, and what this does not prove</b></summary>
+<summary><b>The big scary threat model and what this does not prove</b></summary>
 
 <br/>
 
 After all, it's worth being honest about the limits because a reviewer _will_ find them.
 
-**What a proof means:** a unique human, anonymous to us, was live in front of a camera within 60 seconds of this exact diff being signed, and they have spent one unit of a daily budget that follows them across every machine and agent they operate.
+**What a proof means:** A proof attests that a human, anonymous to us, was live in front of a camera within 60 seconds of this exact diff being signed, and they have spent one unit of a daily budget that follows them across every machine and agent they operate.
 
-**What it does not mean:** that they read the diff. Presence is not comprehension, and no cryptography fixes that. What the budget does is make indiscriminate approval costly enough to be a decision. Binding the proof to the diff hash means at minimum they were shown a specific change rather than blanket-signing a session.
+**What it does not mean:** A proof doesn't mean that they read the diff. Presence is not comprehension, no cryptography can fix some stupid. Instead, what the budget does is make indiscriminate approval costly enough to be a decision. Binding the proof to the diff hash means at the very minimum they were shown a specific change rather than blanket-signing a session. So the devs stay awake at the wheel!
 
-**Not addressed:** a coerced human, a human who genuinely does not care, or a compromised machine that shows one diff and signs another. The last one is the interesting one and it is where we would go next.
+**Not addressed:** It does not stop a coerced human, or a human who genuinely does not care, or a compromised machine that shows one diff and signs another. The last one is the interesting one and it is where we would go next.
 
 </details>
 
@@ -259,8 +259,7 @@ After all, it's worth being honest about the limits because a reviewer _will_ fi
 
 ## Status
 
-Built at ETHGlobal Lisbon, 24 to 26 July 2026. It is a weekend old. The signing path, the liveness gate, the nonce and freshness checks, the policy engine and the pull request check all work. Treat the rest as intent.
-
+Built at ETHGlobal Lisbon, 24 to 26 July 2026. Thanks for trusting us to fix your commitment issues with our best intent.
 <div align="center">
 
 **Targeting** &nbsp;·&nbsp; World AgentKit New Use Cases &nbsp;·&nbsp; World Selfie Check Beta
