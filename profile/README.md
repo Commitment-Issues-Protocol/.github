@@ -261,7 +261,7 @@ After all, it's worth being honest about the limits because a reviewer _will_ fi
 
 ## Status
 
-Built at ETHGlobal Lisbon, 24 to 26 July 2026. Helping developers develop for the future. So, thanks for trusting us to fix your commitment issues <3. 
+Built at ETHGlobal Lisbon, 24 to 26 July 2026. Helping developers develop for the future. Thanks for trusting us to fix your commitment issues <3. 
 <div align="center">
 
 **Targeting** &nbsp;·&nbsp; World AgentKit New Use Cases &nbsp;·&nbsp; World Selfie Check Beta
