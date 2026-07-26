@@ -87,6 +87,39 @@ Then on GitHub, a check tells a reviewer what they are actually looking at befor
 
 <br/>
 
+## Quickstart your commits (without the issues)
+
+```bash
+# 1. install
+npm i -g @commitment-issues/cli
+
+# 2. point git at us instead of your usual signer
+commitment init                 # writes .commitment.yml and sets gpg.program
+
+# 3. register the agent that will be asking (needs an Orb-verified World ID, once)
+npx @worldcoin/agentkit-cli register $(commitment agent-address)
+
+# 4. commit something in a protected path
+git commit -m "harden token refresh"
+```
+
+To enforce it on pull requests, drop in the action:
+
+```yaml
+# .github/workflows/commitment.yml
+name: commitment issues
+on: [pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: Commitment-Issues-Protocol/verify-action@v1
+```
+
+<br/>
+
 ## How it works
 
 ```mermaid
@@ -190,41 +223,8 @@ Commitment Issues lives on World Chain. Everything here is public including the 
 
 <br/>
 
-## Quickstart
-
-```bash
-# 1. install
-npm i -g @commitment-issues/cli
-
-# 2. point git at us instead of your usual signer
-commitment init                 # writes .commitment.yml and sets gpg.program
-
-# 3. register the agent that will be asking (needs an Orb-verified World ID, once)
-npx @worldcoin/agentkit-cli register $(commitment agent-address)
-
-# 4. commit something in a protected path
-git commit -m "harden token refresh"
-```
-
-To enforce it on pull requests, drop in the action:
-
-```yaml
-# .github/workflows/commitment.yml
-name: commitment issues
-on: [pull_request]
-jobs:
-  verify:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with: { fetch-depth: 0 }
-      - uses: Commitment-Issues-Protocol/verify-action@v1
-```
-
-<br/>
-
 <details>
-<summary><b>Things that cost us hours, so they do not cost you any</b></summary>
+<summary><b>The nitty-gritty details</b></summary>
 
 <br/>
 
@@ -245,7 +245,7 @@ Everything below is from building this over one weekend against the beta SDKs. I
 
 <br/>
 
-Worth being honest about the limits, because a reviewer will find them anyway.
+After all, it's worth being honest about the limits because a reviewer _will_ find them.
 
 **What a proof means:** a unique human, anonymous to us, was live in front of a camera within 60 seconds of this exact diff being signed, and they have spent one unit of a daily budget that follows them across every machine and agent they operate.
 
