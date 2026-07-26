@@ -174,7 +174,7 @@ Built on World's newest surfaces, most of which shipped in the last few months a
 
 ## Deployment
 
-Live on World Chain. Everything here is public — identifiers and on-chain addresses, no secrets.
+Commitment Issues lives on World Chain. Everything here is public including the identifiers and the on-chain addresses.
 
 | What | Value |
 |---|---|
